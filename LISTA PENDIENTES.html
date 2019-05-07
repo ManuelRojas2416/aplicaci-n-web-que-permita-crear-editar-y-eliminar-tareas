@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+    <table id="tabla" border="0">
+    <tr>
+    <P> LISTA DE TAREAS </P>
+    </tr>
+    </table><br>
+    
+    <button onclick="myCreateFunction()">AÑADIR</button>
+    <button onclick="myDeleteFunction()">BORRAR</button>
+    <button onclick="myEditFunction()">EDITAR</button>
+    
+    <script>
+    function myCreateFunction() // creara tarea
+    {
+    var table = document.getElementById("tabla");
+      {
+      var row = table.insertRow(0);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = '<input type="text">';
+      cell2.innerHTML = '<input type="checkbox">';
+      }
+    }
+    function myDeleteFunction() // esto eliminara tarea
+    {
+    document.getElementById("tabla").deleteRow(0);
+    
+    
+    }
+      function myEditFunction() // aqui editara tarea
+    {
+    var table = document.getElementById("tabla");
+      {
+      var row = table.editRow(0);
+      var cell1 = row.editCell(0);
+      var cell2 = row.editCell(1);
+      cell1.innerHTML = '<input type="text">';
+      cell2.innerHTML = '<input type="checkbox">';
+      }
+    }
+    
+    </script>
+    </script>
+    
+    </body>
+</html>
